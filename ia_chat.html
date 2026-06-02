@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Menezes Está Evoluindo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-container">
+        <section class="hero-card">
+            <div class="hero-content">
+                <h1>o menezes esta evoluindo</h1>
+                <p>Faça qualquer pergunta e receba uma resposta inteligente com design bonito e moderno.</p>
+                <button id="start-button" class="primary-button">Abrir chat</button>
+            </div>
+            <div class="hero-decor"></div>
+        </section>
+
+        <section class="quiz-card hidden" id="chat-card">
+            <div class="quiz-header">
+                <span id="chat-status">Pergunte algo</span>
+                <span id="connection-status">IA pronta</span>
+            </div>
+            <div class="messages" id="messages"></div>
+            <div class="chat-input-row">
+                <textarea id="user-input" rows="4" placeholder="Digite sua pergunta aqui..."></textarea>
+            </div>
+            <div class="actions-row">
+                <button id="send-button" class="primary-button">Enviar</button>
+                <button id="clear-button" class="secondary-button">Limpar chat</button>
+            </div>
+        </section>
+
+        <section class="result-card hidden" id="error-card">
+            <h2>Ops...</h2>
+            <p id="error-message"></p>
+            <button id="retry-button" class="primary-button">Tentar novamente</button>
+        </section>
+    </main>
+
+    <script src="ia_chat.js"></script>
+</body>
+</html>
